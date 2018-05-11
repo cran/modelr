@@ -1,18 +1,18 @@
 #' Fit a list of formulas
 #'
-#' \code{fit_with()} is a pipe-friendly tool that applies a list of
-#' formulas to a fitting function such as \code{\link[stats]{lm}()}.
-#' The list of formulas is typically created with \code{\link{formulas}}().
+#' `fit_with()` is a pipe-friendly tool that applies a list of
+#' formulas to a fitting function such as [stats::lm()].
+#' The list of formulas is typically created with [formulas()]().
 #'
-#' Assumes that \code{.f} takes the formula either as first argument
-#' or as second argument if the first argument is \code{data}.  Most
+#' Assumes that `.f` takes the formula either as first argument
+#' or as second argument if the first argument is `data`.  Most
 #' fitting functions should fit these requirements.
 #' @param data A dataset used to fit the models.
-#' @param .f A fitting function such as \code{\link[stats]{lm}()},
-#'   \code{\link[lme4]{lmer}}() or \code{\link[rstanarm]{stan_glmer}()}.
+#' @param .f A fitting function such as [stats::lm()],
+#'   [lme4::lmer()] or [rstanarm::stan_glmer()].
 #' @param .formulas A list of formulas specifying a model.
-#' @param ... Additional arguments passed on to \code{.f}
-#' @seealso \code{\link{formulas}}()
+#' @param ... Additional arguments passed on to `.f`
+#' @seealso [formulas()]()
 #' @export
 #' @examples
 #' # fit_with() is typically used with formulas().
@@ -45,12 +45,12 @@ fit_with <- function(data, .f, .formulas, ...) {
 
 #' Create a list of formulas
 #'
-#' \code{formulas()} creates a list of two-sided formulas by merging a
+#' `formulas()` creates a list of two-sided formulas by merging a
 #' unique left-hand side to a list of right-hand sides.
 #' @param .response A one-sided formula used as the left-hand side of
 #'   all resulting formulas.
 #' @param ... List of formulas whose right-hand sides will be merged
-#'   to \code{.response}.
+#'   to `.response`.
 #' @export
 #' @examples
 #' # Provide named arguments to create a named list of formulas:
@@ -93,16 +93,16 @@ validate_formulas <- function(response, formulas) {
 
 set_lhs <- function(f, lhs) {
   env <- merge_envs(lhs, f)
-  lazyeval::f_new(lazyeval::f_rhs(f), lazyeval::f_rhs(lhs), env)
+  new_formula(f_rhs(lhs), f_rhs(f), env)
 }
 
 #' Add predictors to a formula
 #'
-#' This merges a one- or two-sided formula \code{f} with the
-#' right-hand sides of all formulas supplied in \code{...}.
+#' This merges a one- or two-sided formula `f` with the
+#' right-hand sides of all formulas supplied in `...`.
 #' @param f A formula.
 #' @param ... Formulas whose right-hand sides will be merged to
-#'   \code{f}.
+#'   `f`.
 #' @param fun A function name indicating how to merge the right-hand
 #'   sides.
 #' @export
@@ -119,13 +119,14 @@ add_predictors <- function(f, ..., fun = "+") {
   rhss <- map(list(f, ...), f_zap_lhs)
   rhs <- reduce(rhss, merge_formulas, fun = fun)
   env <- merge_envs(f, rhs)
-  lazyeval::f_new(lazyeval::f_rhs(rhs), lazyeval::f_lhs(f), env)
+
+  new_formula(f_lhs(f), f_rhs(rhs), env)
 }
 
 merge_formulas <- function(f1, f2, fun = "+") {
-  rhs <- call(fun, lazyeval::f_rhs(f1), lazyeval::f_rhs(f2))
+  rhs <- call(fun, f_rhs(f1), f_rhs(f2))
 
-  lhss <- compact(map(list(f1, f2), lazyeval::f_lhs))
+  lhss <- compact(map(list(f1, f2), f_lhs))
   if (length(lhss) == 0) {
     lhs <- NULL
   } else {
@@ -133,7 +134,7 @@ merge_formulas <- function(f1, f2, fun = "+") {
   }
 
   env <- merge_envs(f1, f2)
-  lazyeval::f_new(rhs, lhs, env)
+  new_formula(lhs, rhs, env)
 }
 
 merge_envs <- function(f1, f2) {
@@ -169,7 +170,9 @@ find_env_conflicts <- function(symbol, f1, f2) {
 
   if (!identical(env1, env2)) {
     stop("Cannot merge formulas as their scopes conflict for the symbol '",
-      symbol, "'", call. = FALSE)
+      symbol, "'",
+      call. = FALSE
+    )
   }
 
   env1

@@ -1,15 +1,15 @@
 #' Generate a data grid.
 #'
 #' To visualise a model, it is very useful to be able to generate an
-#' evenly spaced grid of points from the data. \code{data_grid} helps you
-#' do this by wrapping around \code{\link[tidyr]{expand}()}.
+#' evenly spaced grid of points from the data. `data_grid` helps you
+#' do this by wrapping around [tidyr::expand()].
 #'
 #' @param data A data frame
-#' @param ... Variables passed on to \code{\link[tidyr]{expand}()}
+#' @param ... Variables passed on to [tidyr::expand()]
 #' @param .model A model.  If supplied, any predictors needed for the model
-#'   not present in \code{...} will be filled in with "\link{typical}" values.
+#'   not present in `...` will be filled in with "\link{typical}" values.
 #' @export
-#' @seealso \code{\link{seq_range}()} for generating ranges from continuous
+#' @seealso [seq_range()] for generating ranges from continuous
 #'   variables.
 #' @examples
 #' data_grid(mtcars, vs, am)
@@ -25,12 +25,14 @@
 data_grid <- function(data, ..., .model = NULL) {
   expanded <- tidyr::expand(data, ...)
 
-  if (is.null(.model))
+  if (is.null(.model)) {
     return(expanded)
+  }
 
   # Generate grid of typical values
   needed <- setdiff(predictor_vars(.model), names(expanded))
-  typical <- tidyr::crossing_(lapply(data[needed], typical))
+  typical_vals <- lapply(data[needed], typical)
+  typical_df <- tidyr::crossing(!!!typical_vals)
 
-  tidyr::crossing(expanded, typical)
+  tidyr::crossing(expanded, typical_df)
 }

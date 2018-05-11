@@ -1,4 +1,4 @@
-#' Generate \code{n} permutation replicates.
+#' Generate `n` permutation replicates.
 #'
 #' A permutation test involves permuting one or more variables in a data set
 #' before performing the test, in order to break any existing relationships
@@ -8,11 +8,11 @@
 #' @inheritParams resample_partition
 #' @param n Number of permutations to generate.
 #' @param ... Columns to permute. This supports bare column names or dplyr
-#' \link[dplyr]{select_helpers}.
-#' @param columns In \code{permute_}, vector of column names to permute.
+#' [dplyr::select_helpers]
+#' @param columns In `permute_`, vector of column names to permute.
 #' @param .id Name of variable that gives each model a unique integer id.
 #'
-#' @return A data frame with \code{n} rows and one column: \code{perm}
+#' @return A data frame with `n` rows and one column: `perm`
 #' @export
 #' @examples
 #'
@@ -66,12 +66,14 @@ resample_permutation <- function(data, columns, idx = NULL) {
     stop("`data` must be a data frame.", call. = FALSE)
   }
   if (!is.character(columns) ||
-      !(all(columns %in% colnames(data)))) {
+    !(all(columns %in% colnames(data)))) {
     stop("`columns` must be a vector of column names in `data`", call. = FALSE)
   }
   if (!is.integer(idx) || length(idx) != nrow(data)) {
     stop("`idx` must be an integer vector with the same length as there are ",
-         "rows in `data`", call. = FALSE)
+      "rows in `data`",
+      call. = FALSE
+    )
   }
 
   structure(
@@ -94,7 +96,7 @@ print.permutation <- function(x, ...) {
   }
 
   cat("<", obj_sum.permutation(x), "> ", paste(id10, collapse = ", "), "\n",
-      sep = ""
+    sep = ""
   )
 }
 
@@ -122,6 +124,8 @@ dim.permutation <- function(x, ...) {
 #' @method obj_sum resample
 #' @export
 obj_sum.permutation <- function(x, ...) {
-  paste0("permutation (", paste0(x$columns, collapse = ", "), ") [",
-         big_mark(nrow(x)), " x ", big_mark(ncol(x)), "]")
+  paste0(
+    "permutation (", paste0(x$columns, collapse = ", "), ") [",
+    big_mark(nrow(x)), " x ", big_mark(ncol(x)), "]"
+  )
 }
