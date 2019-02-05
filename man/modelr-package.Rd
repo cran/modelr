@@ -6,15 +6,18 @@
 \alias{modelr-package}
 \title{modelr: Modelling Functions that Work with the Pipe}
 \description{
-Functions for modelling that help you seamlessly integrate
-modelling into a pipeline of data manipulation and visualisation.
+\if{html}{\figure{logo.png}{options: align='right'}}
+
+Functions for modelling that help you seamlessly
+    integrate modelling into a pipeline of data manipulation and
+    visualisation.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://modelr.tidyverse.org}
-  \item \url{https://github.com/hadley/modelr}
-  \item Report bugs at \url{https://github.com/hadley/modelr/issues}
+  \item \url{https://github.com/tidyverse/modelr}
+  \item Report bugs at \url{https://github.com/tidyverse/modelr/issues}
 }
 
 }
