@@ -1,6 +1,6 @@
-7e2ca67fd202c041ac9606e77c72eac2 *DESCRIPTION
+195c1699598e057995893151af510fe3 *DESCRIPTION
 0f89eda47110df4df47fd1dba96164b7 *NAMESPACE
-840c517e0bdfefd153a4c888cc8ee0df *NEWS.md
+1158a3010c3d6bb22f03ae2cadefed4d *NEWS.md
 57fb3be2a6c9f0b6c0b8c978b21b9aec *R/bootstrap.R
 a3c0de9d45faae18434474076cc71fe6 *R/cross-validation.R
 9f8b9ba6163049eabcec1d05e0a251d6 *R/data-grid.R
@@ -12,7 +12,7 @@ c295edea21a5d0ad9398c8d3024aa28e *R/model_matrix.R
 95444e0f29be457804b65ae74b92ba78 *R/na-warn.R
 36450ded39df94c8ab9dd2990ce4b330 *R/partition.R
 f7b0228d039c430ec090bac49844100c *R/permute.R
-3d78c06af4b00d12930f44c7b2da3694 *R/predictions.R
+806cf26bac215551d75dec6250821da9 *R/predictions.R
 5484a5498231d7334bcfd45702caf9d7 *R/quality.R
 24f965f51d07916784397a4741135b5d *R/resample.R
 eedbff0f41f7ac012a579dd40e6bd63f *R/residuals.R
@@ -21,7 +21,7 @@ eedbff0f41f7ac012a579dd40e6bd63f *R/residuals.R
 843e132e24b903ccc1803cdbfb76eb26 *R/typical.R
 84a5593d723a4755bb953a2265a2d0ea *R/utils-lang.R
 54df7e2f3bf9867e796647bc64fd0689 *R/utils.R
-46abb9b92d9f9b6e1919a25d204451e1 *README.md
+1511b973e3f959bec7ef573501a101fc *README.md
 c040b7762c2934fcc667a3495ad57efe *data/heights.rda
 ffd5f438ae67195a4c2fa23dd922a910 *data/sim1.rda
 c155c78849583d02713d189068309762 *data/sim2.rda
@@ -52,9 +52,16 @@ d63a940cd11637be71b55b97cc84dc53 *man/resample_partition.Rd
 2f1c1034dd00234c971b4399ccf3306e *man/sim.Rd
 b0df1ae92c7d48be1e445b2100a0587e *man/typical.Rd
 daad45bf0c55617791ef8c4e34ffa1ac *tests/testthat.R
-da0d4a9bacb23802751a990b41c867ca *tests/testthat/test-data-grid.R
+d6390d64b8f2d2186c557d9933ae9022 *tests/testthat/test-cross-validate.R
+96da272add6d9cb6ace6c9d732ff1656 *tests/testthat/test-data-grid.R
 0723f1e80ab9bca4202f8c2ce9f0241a *tests/testthat/test-formulas.R
-cc14aec78be59150bc7b20be00b1d2ba *tests/testthat/test-predictions.R
-e778d0d704b85e55d7fed9bb5f3e8df0 *tests/testthat/test-resampling.R
+08082a2003ce4ec51583f0a92f73cc17 *tests/testthat/test-geom-ref-line.R
+d9fda079bc21f8b33faec5de059a94ad *tests/testthat/test-model-matrix.R
+11e11a68bfd2544ad244365d12f8690a *tests/testthat/test-na-warn.R
+4ace4ced4e16ef74e28841e6bb4b285f *tests/testthat/test-predictions.R
+f43c5155ffcb4f0b9e74947aa9125cc3 *tests/testthat/test-resample-partition.R
+9affdb3f9bd8d7757649e4beb0f321a7 *tests/testthat/test-resampling.R
+cb1c6aa89432e65ab203ccc6c1bccabb *tests/testthat/test-residuals.R
 a02473ea3b8b81c79ebf27d65eed3b93 *tests/testthat/test-response_var.R
+b53aa97e7b04d0f9208813665cdba81b *tests/testthat/test-seq-range.R
 0304fd73e3278a25ca1f382f1680539d *tests/testthat/test-typical.R
