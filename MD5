@@ -1,11 +1,11 @@
-195c1699598e057995893151af510fe3 *DESCRIPTION
+1d144e6b2fa9c8907bbfb032fce65a86 *DESCRIPTION
 0f89eda47110df4df47fd1dba96164b7 *NAMESPACE
-1158a3010c3d6bb22f03ae2cadefed4d *NEWS.md
+a0ea45353f060bf3f6854e17d5c6e5bf *NEWS.md
 57fb3be2a6c9f0b6c0b8c978b21b9aec *R/bootstrap.R
 a3c0de9d45faae18434474076cc71fe6 *R/cross-validation.R
-9f8b9ba6163049eabcec1d05e0a251d6 *R/data-grid.R
+4048ae38f05339d6e9bfe2a6800164de *R/data-grid.R
 9f831f87851514705fcc85de24203d15 *R/data.R
-51b38315acfdfa1e192ab3ad06307ed5 *R/formulas.R
+420b53e0ef033149b6528a73ece7e86c *R/formulas.R
 860d3015670806ae1ca2bb0126cb4f30 *R/geom_ref_line.R
 c295edea21a5d0ad9398c8d3024aa28e *R/model_matrix.R
 80caf47b8eaeedd005159869d4b059ca *R/modelr.R
@@ -21,7 +21,7 @@ eedbff0f41f7ac012a579dd40e6bd63f *R/residuals.R
 843e132e24b903ccc1803cdbfb76eb26 *R/typical.R
 84a5593d723a4755bb953a2265a2d0ea *R/utils-lang.R
 54df7e2f3bf9867e796647bc64fd0689 *R/utils.R
-1511b973e3f959bec7ef573501a101fc *README.md
+0a4a79f747bd3ea6fee61b7d3a9d3992 *README.md
 c040b7762c2934fcc667a3495ad57efe *data/heights.rda
 ffd5f438ae67195a4c2fa23dd922a910 *data/sim1.rda
 c155c78849583d02713d189068309762 *data/sim2.rda
@@ -32,9 +32,9 @@ d23f65ae7f994af283efe25552834512 *data/sim4.rda
 f890c98a68b419cd0a41a6a19fad21c3 *man/add_residuals.Rd
 f0770009982a78276de1b46de163fdc2 *man/bootstrap.Rd
 6a068f157dea6ef502387e29b56d4ee9 *man/crossv_mc.Rd
-3dc57bbafa67ebd05808339ffcce7436 *man/data_grid.Rd
+76328b06d97f86b454394a79823dd360 *man/data_grid.Rd
 b8e4e18572591ce4e1940f99c014c169 *man/figures/logo.png
-58745fe241e8b3a166995bc1279c463e *man/fit_with.Rd
+e68f8d24aac345896821924195bcd88f *man/fit_with.Rd
 5e759a1d727767ad088b12760366cb73 *man/formulas.Rd
 e659fadd7e9db15c3c6d901e7792f8bc *man/geom_ref_line.Rd
 8d281cffe0bb4e27f927a670ebfd0704 *man/heights.Rd

@@ -1,6 +1,6 @@
 Package: modelr
 Title: Modelling Functions that Work with the Pipe
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: 
     c(person(given = "Hadley",
              family = "Wickham",
@@ -14,7 +14,7 @@ Description: Functions for modelling that help you seamlessly
 License: GPL-3
 URL: https://modelr.tidyverse.org, https://github.com/tidyverse/modelr
 BugReports: https://github.com/tidyverse/modelr/issues
-Depends: R (>= 3.1)
+Depends: R (>= 3.2)
 Imports: broom, dplyr, magrittr, purrr (>= 0.2.2), rlang (>= 0.2.0),
         tibble, tidyr (>= 0.8.0)
 Suggests: compiler, covr, ggplot2, testthat
@@ -22,9 +22,9 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-02-18 13:48:09 UTC; hadley
+Packaged: 2019-08-08 13:59:29 UTC; hadley
 Author: Hadley Wickham [aut, cre],
   RStudio [cph]
 Maintainer: Hadley Wickham <hadley@rstudio.com>
 Repository: CRAN
-Date/Publication: 2019-02-18 22:00:03 UTC
+Date/Publication: 2019-08-08 14:20:02 UTC
