@@ -1,3 +1,7 @@
+# modelr 0.1.6
+
+* R CMD check documentation fix
+
 # modelr 0.1.5
 
 * Fix to `data_grid()` to work with dev tidyr.
