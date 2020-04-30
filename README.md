@@ -5,8 +5,8 @@
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![Travis build
-status](https://travis-ci.org/tidyverse/modelr.svg?branch=master)](https://travis-ci.org/tidyverse/modelr)
+[![R build
+status](https://github.com/tidyverse/modelr/workflows/R-CMD-check/badge.svg)](https://github.com/tidyverse/modelr/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/tidyverse/modelr/branch/master/graph/badge.svg)](https://codecov.io/gh/tidyverse/modelr?branch=master)
 <!-- badges: end -->
@@ -17,6 +17,9 @@ The modelr package provides functions that help you create elegant
 pipelines when modelling. It is designed primarily to support teaching
 the basics of modelling within the tidyverse, particularly in [R for
 Data Science](http://r4ds.had.co.nz/model-basics.html).
+
+Please see <http://tidymodels.org/> for a more comprehensive framework
+for modelling within the tidyverse.
 
 ## Installation
 
@@ -135,12 +138,10 @@ additional columns to an existing data frame:
 
 ``` r
 set.seed(1014)
-df <- tibble::data_frame(
+df <- tibble::tibble(
   x = sort(runif(100)),
   y = 5 * x + 0.5 * x ^ 2 + 3 + rnorm(length(x))
 )
-#> Warning: `data_frame()` is deprecated, use `tibble()`.
-#> This warning is displayed once per session.
 
 mod <- lm(y ~ x, data = df)
 df %>% add_predictions(mod)
