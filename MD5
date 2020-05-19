@@ -1,6 +1,6 @@
-806f0ebbdcd2b768a8be6a98e442b9fe *DESCRIPTION
+522a49afa07d7a98827f476a64c6c474 *DESCRIPTION
 0f89eda47110df4df47fd1dba96164b7 *NAMESPACE
-16e10bcc1cb47e073ccd2d61f1069130 *NEWS.md
+6176fc1ea203737e46399e026d155f9a *NEWS.md
 4a987902e5b2069149b55004f9ad4c69 *R/bootstrap.R
 51daac1e6965f9c0723d85d6977c806f *R/cross-validation.R
 4048ae38f05339d6e9bfe2a6800164de *R/data-grid.R
@@ -12,13 +12,13 @@ c295edea21a5d0ad9398c8d3024aa28e *R/model_matrix.R
 e512f3182937a44cdf5e3c5ceba515c2 *R/na-warn.R
 3ab1b184d634a571c5e035d1d9037dfb *R/partition.R
 575dad6488a8526108fd3c4d5d77a06e *R/permute.R
-111909c7e45cd5df7a55325547279ba2 *R/predictions.R
+516fa8a700019a6b92a33a55852dbd18 *R/predictions.R
 5484a5498231d7334bcfd45702caf9d7 *R/quality.R
 f3814bc88ea1b450a8f1aa9e02c8b791 *R/resample.R
-edc18f6a29e65286d074cb20af3fb42e *R/residuals.R
+04faa8db3041e971d815dfffe26a8ddb *R/residuals.R
 59cabddf9b6c6fd5d35861c3e3e87965 *R/response.R
 13fd320516289e9a497c96e615f146ab *R/seq_range.R
-843e132e24b903ccc1803cdbfb76eb26 *R/typical.R
+1c4a053b539131159c00a6db786a391d *R/typical.R
 84a5593d723a4755bb953a2265a2d0ea *R/utils-lang.R
 54df7e2f3bf9867e796647bc64fd0689 *R/utils.R
 ee1855b6629cc1eeebf43ecc64e22e26 *README.md
@@ -60,7 +60,7 @@ d9fda079bc21f8b33faec5de059a94ad *tests/testthat/test-model-matrix.R
 11e11a68bfd2544ad244365d12f8690a *tests/testthat/test-na-warn.R
 4ace4ced4e16ef74e28841e6bb4b285f *tests/testthat/test-predictions.R
 f43c5155ffcb4f0b9e74947aa9125cc3 *tests/testthat/test-resample-partition.R
-9affdb3f9bd8d7757649e4beb0f321a7 *tests/testthat/test-resampling.R
+d179d69f2f2888470c5281207c1563a5 *tests/testthat/test-resampling.R
 cb1c6aa89432e65ab203ccc6c1bccabb *tests/testthat/test-residuals.R
 a02473ea3b8b81c79ebf27d65eed3b93 *tests/testthat/test-response_var.R
 b53aa97e7b04d0f9208813665cdba81b *tests/testthat/test-seq-range.R
