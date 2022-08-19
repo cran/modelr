@@ -1,6 +1,6 @@
-522a49afa07d7a98827f476a64c6c474 *DESCRIPTION
+f59cedfa3b9e8b5e93d0ed60b6a6ec24 *DESCRIPTION
 0f89eda47110df4df47fd1dba96164b7 *NAMESPACE
-6176fc1ea203737e46399e026d155f9a *NEWS.md
+bd9b7fbfa13a90f2db816f6fcd8753eb *NEWS.md
 4a987902e5b2069149b55004f9ad4c69 *R/bootstrap.R
 51daac1e6965f9c0723d85d6977c806f *R/cross-validation.R
 4048ae38f05339d6e9bfe2a6800164de *R/data-grid.R
@@ -21,7 +21,7 @@ f3814bc88ea1b450a8f1aa9e02c8b791 *R/resample.R
 1c4a053b539131159c00a6db786a391d *R/typical.R
 84a5593d723a4755bb953a2265a2d0ea *R/utils-lang.R
 54df7e2f3bf9867e796647bc64fd0689 *R/utils.R
-ee1855b6629cc1eeebf43ecc64e22e26 *README.md
+8d050c9eb963245584ec57868e457069 *README.md
 c040b7762c2934fcc667a3495ad57efe *data/heights.rda
 ffd5f438ae67195a4c2fa23dd922a910 *data/sim1.rda
 c155c78849583d02713d189068309762 *data/sim2.rda
@@ -40,9 +40,9 @@ e659fadd7e9db15c3c6d901e7792f8bc *man/geom_ref_line.Rd
 586d141113d1561abc7aa3064ad0e242 *man/heights.Rd
 8954d829b720ddf45c08ed0be8346e88 *man/model-quality.Rd
 2df8c25cd25bcb4aa0f15689cd7d2894 *man/model_matrix.Rd
-7b97e8e1f3c0958a0d7b5602a90f8857 *man/modelr-package.Rd
-d6194cd16732fde87e095b8ce42bec2a *man/na.warn.Rd
-843bd305d0057e9b88a2a764f082f518 *man/permute.Rd
+1e285b2329d6d139feeada8715f270ed *man/modelr-package.Rd
+1fb69954b7e86fea24bc818663780614 *man/na.warn.Rd
+7195d5fdf962cc6ac99bf827a278a37c *man/permute.Rd
 a64a7ea44fcaa33c2d3ad0f7909cbc3e *man/pipe.Rd
 133bf62781d8778baccbca1377307199 *man/resample.Rd
 10df1fda7a9940500f8ce931af501c8a *man/resample_bootstrap.Rd
