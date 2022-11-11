@@ -1,3 +1,7 @@
+# modelr 0.1.10
+
+* Relax test for R-devel
+
 # modelr 0.1.9
 
 * Redocument to fix HTML issues in .Rd
