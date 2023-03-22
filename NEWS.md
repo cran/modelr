@@ -1,3 +1,7 @@
+# modelr 0.1.11
+
+* Fixes for R CMD check
+
 # modelr 0.1.10
 
 * Relax test for R-devel

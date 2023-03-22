@@ -1,8 +1,8 @@
-5a9ad1d98a8e3df938e62276e8c07e1e *DESCRIPTION
+c1ff3fad2097cd8cc6afd343636cbf70 *DESCRIPTION
 0f89eda47110df4df47fd1dba96164b7 *NAMESPACE
-9c7f4e362dbd6bc181dc40a59f9a9e44 *NEWS.md
-4a987902e5b2069149b55004f9ad4c69 *R/bootstrap.R
-51daac1e6965f9c0723d85d6977c806f *R/cross-validation.R
+2d837f0d020dd9689a9888a8512956f5 *NEWS.md
+4bf44073e26ffd784e1cd0d9c4015376 *R/bootstrap.R
+1295d52968f406055e6bbe3d1af3cdf2 *R/cross-validation.R
 4048ae38f05339d6e9bfe2a6800164de *R/data-grid.R
 c1570190a73e2c217830594157a8a2c4 *R/data.R
 02395ae98ee6bc9551a4e1cdadd3e27b *R/formulas.R
@@ -11,12 +11,12 @@ c295edea21a5d0ad9398c8d3024aa28e *R/model_matrix.R
 80caf47b8eaeedd005159869d4b059ca *R/modelr.R
 e512f3182937a44cdf5e3c5ceba515c2 *R/na-warn.R
 3ab1b184d634a571c5e035d1d9037dfb *R/partition.R
-526480dae30ceefbfd02c7d264d3756e *R/permute.R
+386142985b5a060eb02e3e3d0f31e6dd *R/permute.R
 516fa8a700019a6b92a33a55852dbd18 *R/predictions.R
 5484a5498231d7334bcfd45702caf9d7 *R/quality.R
 f3814bc88ea1b450a8f1aa9e02c8b791 *R/resample.R
 04faa8db3041e971d815dfffe26a8ddb *R/residuals.R
-59cabddf9b6c6fd5d35861c3e3e87965 *R/response.R
+8674e677a590158a287fb48a7c7d219b *R/response.R
 13fd320516289e9a497c96e615f146ab *R/seq_range.R
 1c4a053b539131159c00a6db786a391d *R/typical.R
 84a5593d723a4755bb953a2265a2d0ea *R/utils-lang.R
@@ -40,7 +40,7 @@ e659fadd7e9db15c3c6d901e7792f8bc *man/geom_ref_line.Rd
 586d141113d1561abc7aa3064ad0e242 *man/heights.Rd
 8954d829b720ddf45c08ed0be8346e88 *man/model-quality.Rd
 2df8c25cd25bcb4aa0f15689cd7d2894 *man/model_matrix.Rd
-1e285b2329d6d139feeada8715f270ed *man/modelr-package.Rd
+8a0af0e0417b4f9ccfe49a7bb7d8afda *man/modelr-package.Rd
 1fb69954b7e86fea24bc818663780614 *man/na.warn.Rd
 84cb37157bedbf763f79cfd0a0e38804 *man/permute.Rd
 a64a7ea44fcaa33c2d3ad0f7909cbc3e *man/pipe.Rd
